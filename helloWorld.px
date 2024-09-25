@@ -1,0 +1,6 @@
+// Example code 
+i32 main(){
+    float name = 1.2;
+    string var2 = "Hello World";
+    return 0;
+}
