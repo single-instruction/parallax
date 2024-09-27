@@ -1,6 +1,12 @@
 // Example code 
 i32 main(){
-    float name = 1.2;
-    string var2 = "Hello World";
+    f64 x = 1.2;
+    print(x);
+
+    print(x + 0.8);
+
+    string h = "Hello World";
+    print(h);
+    
     return 0;
 }
