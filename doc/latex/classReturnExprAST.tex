@@ -1,0 +1,70 @@
+\doxysection{Return\+Expr\+AST Class Reference}
+\hypertarget{classReturnExprAST}{}\label{classReturnExprAST}\index{ReturnExprAST@{ReturnExprAST}}
+Inheritance diagram for Return\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classReturnExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classReturnExprAST_ad73788c9b2d6ca8d0b3ba57797052c80}\label{classReturnExprAST_ad73788c9b2d6ca8d0b3ba57797052c80} 
+{\bfseries Return\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ expr)
+\item 
+void \mbox{\hyperlink{classReturnExprAST_a2c8f4a84ca999fef197a6d6fbb18f145}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classReturnExprAST_a0edfb7dd36252fbd4f277b3bbec0a0d1}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classReturnExprAST_ad924591475ff717f0020ab0a0ce5e51f}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classReturnExprAST_a0edfb7dd36252fbd4f277b3bbec0a0d1}\index{ReturnExprAST@{ReturnExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!ReturnExprAST@{ReturnExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classReturnExprAST_a0edfb7dd36252fbd4f277b3bbec0a0d1} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Return\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classReturnExprAST_a2c8f4a84ca999fef197a6d6fbb18f145}\index{ReturnExprAST@{ReturnExprAST}!dump@{dump}}
+\index{dump@{dump}!ReturnExprAST@{ReturnExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classReturnExprAST_a2c8f4a84ca999fef197a6d6fbb18f145} 
+void Return\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classReturnExprAST_ad924591475ff717f0020ab0a0ce5e51f}\index{ReturnExprAST@{ReturnExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!ReturnExprAST@{ReturnExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classReturnExprAST_ad924591475ff717f0020ab0a0ce5e51f} 
+std\+::string Return\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

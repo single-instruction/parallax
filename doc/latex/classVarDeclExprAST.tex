@@ -1,0 +1,70 @@
+\doxysection{Var\+Decl\+Expr\+AST Class Reference}
+\hypertarget{classVarDeclExprAST}{}\label{classVarDeclExprAST}\index{VarDeclExprAST@{VarDeclExprAST}}
+Inheritance diagram for Var\+Decl\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVarDeclExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classVarDeclExprAST_a7ec2a3710b8fc8dc81fea9d2fbaed185}\label{classVarDeclExprAST_a7ec2a3710b8fc8dc81fea9d2fbaed185} 
+{\bfseries Var\+Decl\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, const std\+::string \&name, Type type, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ init\+Val)
+\item 
+void \mbox{\hyperlink{classVarDeclExprAST_ac3b6e65eb73d0714d5dee3ee8962b697}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classVarDeclExprAST_a88abf74c572877ebb32983623ef90b72}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classVarDeclExprAST_a109f6d413d8c920ce6ed0cafd8f1b163}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classVarDeclExprAST_a88abf74c572877ebb32983623ef90b72}\index{VarDeclExprAST@{VarDeclExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!VarDeclExprAST@{VarDeclExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classVarDeclExprAST_a88abf74c572877ebb32983623ef90b72} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Var\+Decl\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classVarDeclExprAST_ac3b6e65eb73d0714d5dee3ee8962b697}\index{VarDeclExprAST@{VarDeclExprAST}!dump@{dump}}
+\index{dump@{dump}!VarDeclExprAST@{VarDeclExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classVarDeclExprAST_ac3b6e65eb73d0714d5dee3ee8962b697} 
+void Var\+Decl\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classVarDeclExprAST_a109f6d413d8c920ce6ed0cafd8f1b163}\index{VarDeclExprAST@{VarDeclExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!VarDeclExprAST@{VarDeclExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classVarDeclExprAST_a109f6d413d8c920ce6ed0cafd8f1b163} 
+std\+::string Var\+Decl\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

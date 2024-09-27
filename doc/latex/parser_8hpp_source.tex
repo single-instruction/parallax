@@ -1,0 +1,106 @@
+\doxysection{parser.\+hpp}
+\hypertarget{parser_8hpp_source}{}\label{parser_8hpp_source}\index{build/parser.hpp@{build/parser.hpp}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{/*\ A\ Bison\ parser,\ made\ by\ GNU\ Bison\ 3.8.2.\ \ */}}
+\DoxyCodeLine{00002\ }
+\DoxyCodeLine{00003\ \textcolor{comment}{/*\ Bison\ interface\ for\ Yacc-\/like\ parsers\ in\ C}}
+\DoxyCodeLine{00004\ \textcolor{comment}{}}
+\DoxyCodeLine{00005\ \textcolor{comment}{\ \ \ Copyright\ (C)\ 1984,\ 1989-\/1990,\ 2000-\/2015,\ 2018-\/2021\ Free\ Software\ Foundation,}}
+\DoxyCodeLine{00006\ \textcolor{comment}{\ \ \ Inc.}}
+\DoxyCodeLine{00007\ \textcolor{comment}{}}
+\DoxyCodeLine{00008\ \textcolor{comment}{\ \ \ This\ program\ is\ free\ software:\ you\ can\ redistribute\ it\ and/or\ modify}}
+\DoxyCodeLine{00009\ \textcolor{comment}{\ \ \ it\ under\ the\ terms\ of\ the\ GNU\ General\ Public\ License\ as\ published\ by}}
+\DoxyCodeLine{00010\ \textcolor{comment}{\ \ \ the\ Free\ Software\ Foundation,\ either\ version\ 3\ of\ the\ License,\ or}}
+\DoxyCodeLine{00011\ \textcolor{comment}{\ \ \ (at\ your\ option)\ any\ later\ version.}}
+\DoxyCodeLine{00012\ \textcolor{comment}{}}
+\DoxyCodeLine{00013\ \textcolor{comment}{\ \ \ This\ program\ is\ distributed\ in\ the\ hope\ that\ it\ will\ be\ useful,}}
+\DoxyCodeLine{00014\ \textcolor{comment}{\ \ \ but\ WITHOUT\ ANY\ WARRANTY;\ without\ even\ the\ implied\ warranty\ of}}
+\DoxyCodeLine{00015\ \textcolor{comment}{\ \ \ MERCHANTABILITY\ or\ FITNESS\ FOR\ A\ PARTICULAR\ PURPOSE.\ \ See\ the}}
+\DoxyCodeLine{00016\ \textcolor{comment}{\ \ \ GNU\ General\ Public\ License\ for\ more\ details.}}
+\DoxyCodeLine{00017\ \textcolor{comment}{}}
+\DoxyCodeLine{00018\ \textcolor{comment}{\ \ \ You\ should\ have\ received\ a\ copy\ of\ the\ GNU\ General\ Public\ License}}
+\DoxyCodeLine{00019\ \textcolor{comment}{\ \ \ along\ with\ this\ program.\ \ If\ not,\ see\ <https://www.gnu.org/licenses/>.\ \ */}}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{comment}{/*\ As\ a\ special\ exception,\ you\ may\ create\ a\ larger\ work\ that\ contains}}
+\DoxyCodeLine{00022\ \textcolor{comment}{\ \ \ part\ or\ all\ of\ the\ Bison\ parser\ skeleton\ and\ distribute\ that\ work}}
+\DoxyCodeLine{00023\ \textcolor{comment}{\ \ \ under\ terms\ of\ your\ choice,\ so\ long\ as\ that\ work\ isn't\ itself\ a}}
+\DoxyCodeLine{00024\ \textcolor{comment}{\ \ \ parser\ generator\ using\ the\ skeleton\ or\ a\ modified\ version\ thereof}}
+\DoxyCodeLine{00025\ \textcolor{comment}{\ \ \ as\ a\ parser\ skeleton.\ \ Alternatively,\ if\ you\ modify\ or\ redistribute}}
+\DoxyCodeLine{00026\ \textcolor{comment}{\ \ \ the\ parser\ skeleton\ itself,\ you\ may\ (at\ your\ option)\ remove\ this}}
+\DoxyCodeLine{00027\ \textcolor{comment}{\ \ \ special\ exception,\ which\ will\ cause\ the\ skeleton\ and\ the\ resulting}}
+\DoxyCodeLine{00028\ \textcolor{comment}{\ \ \ Bison\ output\ files\ to\ be\ licensed\ under\ the\ GNU\ General\ Public}}
+\DoxyCodeLine{00029\ \textcolor{comment}{\ \ \ License\ without\ this\ special\ exception.}}
+\DoxyCodeLine{00030\ \textcolor{comment}{}}
+\DoxyCodeLine{00031\ \textcolor{comment}{\ \ \ This\ special\ exception\ was\ added\ by\ the\ Free\ Software\ Foundation\ in}}
+\DoxyCodeLine{00032\ \textcolor{comment}{\ \ \ version\ 2.2\ of\ Bison.\ \ */}}
+\DoxyCodeLine{00033\ }
+\DoxyCodeLine{00034\ \textcolor{comment}{/*\ DO\ NOT\ RELY\ ON\ FEATURES\ THAT\ ARE\ NOT\ DOCUMENTED\ in\ the\ manual,}}
+\DoxyCodeLine{00035\ \textcolor{comment}{\ \ \ especially\ those\ whose\ name\ start\ with\ YY\_\ or\ yy\_.\ \ They\ are}}
+\DoxyCodeLine{00036\ \textcolor{comment}{\ \ \ private\ implementation\ details\ that\ can\ be\ changed\ or\ removed.\ \ */}}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00038\ \textcolor{preprocessor}{\#ifndef\ YY\_YY\_BUILD\_PARSER\_HPP\_INCLUDED}}
+\DoxyCodeLine{00039\ \textcolor{preprocessor}{\#\ define\ YY\_YY\_BUILD\_PARSER\_HPP\_INCLUDED}}
+\DoxyCodeLine{00040\ \textcolor{comment}{/*\ Debug\ traces.\ \ */}}
+\DoxyCodeLine{00041\ \textcolor{preprocessor}{\#ifndef\ YYDEBUG}}
+\DoxyCodeLine{00042\ \textcolor{preprocessor}{\#\ define\ YYDEBUG\ 0}}
+\DoxyCodeLine{00043\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#if\ YYDEBUG}}
+\DoxyCodeLine{00045\ \textcolor{keyword}{extern}\ \textcolor{keywordtype}{int}\ yydebug;}
+\DoxyCodeLine{00046\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00048\ \textcolor{comment}{/*\ Token\ kinds.\ \ */}}
+\DoxyCodeLine{00049\ \textcolor{preprocessor}{\#ifndef\ YYTOKENTYPE}}
+\DoxyCodeLine{00050\ \textcolor{preprocessor}{\#\ define\ YYTOKENTYPE}}
+\DoxyCodeLine{00051\ \ \ \textcolor{keyword}{enum}\ yytokentype}
+\DoxyCodeLine{00052\ \ \ \{}
+\DoxyCodeLine{00053\ \ \ \ \ YYEMPTY\ =\ -\/2,}
+\DoxyCodeLine{00054\ \ \ \ \ YYEOF\ =\ 0,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ "{}end\ of\ file"{}\ \ */}}
+\DoxyCodeLine{00055\ \ \ \ \ YYerror\ =\ 256,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ error\ \ */}}
+\DoxyCodeLine{00056\ \ \ \ \ YYUNDEF\ =\ 257,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ "{}invalid\ token"{}\ \ */}}
+\DoxyCodeLine{00057\ \ \ \ \ IDENTIFIER\ =\ 258,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ IDENTIFIER\ \ */}}
+\DoxyCodeLine{00058\ \ \ \ \ TYPE\ =\ 259,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ TYPE\ \ */}}
+\DoxyCodeLine{00059\ \ \ \ \ INT\_LITERAL\ =\ 260,\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ INT\_LITERAL\ \ */}}
+\DoxyCodeLine{00060\ \ \ \ \ FLOAT\_LITERAL\ =\ 261,\ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ FLOAT\_LITERAL\ \ */}}
+\DoxyCodeLine{00061\ \ \ \ \ STRING\_LITERAL\ =\ 262,\ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ STRING\_LITERAL\ \ */}}
+\DoxyCodeLine{00062\ \ \ \ \ FUNCTION\ =\ 263,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ FUNCTION\ \ */}}
+\DoxyCodeLine{00063\ \ \ \ \ RETURN\ =\ 264,\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ RETURN\ \ */}}
+\DoxyCodeLine{00064\ \ \ \ \ PRINT\ =\ 265\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{comment}{/*\ PRINT\ \ */}}
+\DoxyCodeLine{00065\ \ \ \};}
+\DoxyCodeLine{00066\ \ \ \textcolor{keyword}{typedef}\ \textcolor{keyword}{enum}\ yytokentype\ yytoken\_kind\_t;}
+\DoxyCodeLine{00067\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{comment}{/*\ Value\ type.\ \ */}}
+\DoxyCodeLine{00070\ \textcolor{preprocessor}{\#if\ !\ defined\ YYSTYPE\ \&\&\ !\ defined\ YYSTYPE\_IS\_DECLARED}}
+\DoxyCodeLine{00071\ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionYYSTYPE}{YYSTYPE}}}
+\DoxyCodeLine{00072\ \{}
+\DoxyCodeLine{00073\ \textcolor{preprocessor}{\#line\ 16\ "{}src/compiler/parser.y"{}}}
+\DoxyCodeLine{00074\ }
+\DoxyCodeLine{00075\ \ \ \ \ \textcolor{keywordtype}{char}*\ identifier;}
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{char}*\ type;}
+\DoxyCodeLine{00077\ \ \ \ \ \textcolor{keywordtype}{int}\ intValue;}
+\DoxyCodeLine{00078\ \ \ \ \ \textcolor{keywordtype}{double}\ floatValue;}
+\DoxyCodeLine{00079\ \ \ \ \ \textcolor{keywordtype}{char}*\ stringValue;}
+\DoxyCodeLine{00080\ \ \ \ \ \mbox{\hyperlink{classExprAST}{ExprAST}}*\ expr;}
+\DoxyCodeLine{00081\ \ \ \ \ std::vector<std::unique\_ptr<ExprAST>>*\ exprList;}
+\DoxyCodeLine{00082\ \ \ \ \ \mbox{\hyperlink{classFunctionAST}{FunctionAST}}*\ function;}
+\DoxyCodeLine{00083\ \ \ \ \ std::vector<std::pair<std::string,\ Type>>*\ paramList;}
+\DoxyCodeLine{00084\ }
+\DoxyCodeLine{00085\ \textcolor{preprocessor}{\#line\ 86\ "{}build/parser.hpp"{}}}
+\DoxyCodeLine{00086\ }
+\DoxyCodeLine{00087\ \};}
+\DoxyCodeLine{00088\ \textcolor{keyword}{typedef}\ \textcolor{keyword}{union\ }\mbox{\hyperlink{unionYYSTYPE}{YYSTYPE}}\ \mbox{\hyperlink{unionYYSTYPE}{YYSTYPE}};}
+\DoxyCodeLine{00089\ \textcolor{preprocessor}{\#\ define\ YYSTYPE\_IS\_TRIVIAL\ 1}}
+\DoxyCodeLine{00090\ \textcolor{preprocessor}{\#\ define\ YYSTYPE\_IS\_DECLARED\ 1}}
+\DoxyCodeLine{00091\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00092\ }
+\DoxyCodeLine{00093\ }
+\DoxyCodeLine{00094\ \textcolor{keyword}{extern}\ \mbox{\hyperlink{unionYYSTYPE}{YYSTYPE}}\ yylval;}
+\DoxyCodeLine{00095\ }
+\DoxyCodeLine{00096\ }
+\DoxyCodeLine{00097\ \textcolor{keywordtype}{int}\ yyparse\ (\textcolor{keywordtype}{void});}
+\DoxyCodeLine{00098\ }
+\DoxyCodeLine{00099\ }
+\DoxyCodeLine{00100\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ !YY\_YY\_BUILD\_PARSER\_HPP\_INCLUDED\ \ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

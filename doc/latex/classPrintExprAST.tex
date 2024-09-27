@@ -1,0 +1,70 @@
+\doxysection{Print\+Expr\+AST Class Reference}
+\hypertarget{classPrintExprAST}{}\label{classPrintExprAST}\index{PrintExprAST@{PrintExprAST}}
+Inheritance diagram for Print\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classPrintExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classPrintExprAST_a4d37b37b4feda8860782c89aee351513}\label{classPrintExprAST_a4d37b37b4feda8860782c89aee351513} 
+{\bfseries Print\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ arg)
+\item 
+void \mbox{\hyperlink{classPrintExprAST_a141d278a92fe06478943f4b052947761}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classPrintExprAST_a59d59548054f4e06080a47697834a723}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classPrintExprAST_abf8dff2d6bf51756aadf4e67b243234a}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPrintExprAST_a59d59548054f4e06080a47697834a723}\index{PrintExprAST@{PrintExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!PrintExprAST@{PrintExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classPrintExprAST_a59d59548054f4e06080a47697834a723} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Print\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classPrintExprAST_a141d278a92fe06478943f4b052947761}\index{PrintExprAST@{PrintExprAST}!dump@{dump}}
+\index{dump@{dump}!PrintExprAST@{PrintExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classPrintExprAST_a141d278a92fe06478943f4b052947761} 
+void Print\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classPrintExprAST_abf8dff2d6bf51756aadf4e67b243234a}\index{PrintExprAST@{PrintExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!PrintExprAST@{PrintExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classPrintExprAST_abf8dff2d6bf51756aadf4e67b243234a} 
+std\+::string Print\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

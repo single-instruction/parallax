@@ -1,0 +1,34 @@
+\doxysection{Expr\+AST Class Reference}
+\hypertarget{classExprAST}{}\label{classExprAST}\index{ExprAST@{ExprAST}}
+Inheritance diagram for Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.581921cm]{classExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classExprAST_abfdd1b64c847579ad49cc9834ca03857}\label{classExprAST_abfdd1b64c847579ad49cc9834ca03857} 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\item 
+\Hypertarget{classExprAST_a725c1f225f9e97814809df4a7b25c3c2}\label{classExprAST_a725c1f225f9e97814809df4a7b25c3c2} 
+virtual void {\bfseries dump} (int indent=0) const =0
+\item 
+\Hypertarget{classExprAST_aed79e335f7df2f4fd27be4c78bf96df9}\label{classExprAST_aed79e335f7df2f4fd27be4c78bf96df9} 
+virtual llvm\+::\+Value \texorpdfstring{$\ast$}{*} {\bfseries codegen} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context)=0
+\item 
+\Hypertarget{classExprAST_a4afce781a2b9e3820df599ac6c924115}\label{classExprAST_a4afce781a2b9e3820df599ac6c924115} 
+virtual std\+::string {\bfseries type\+Check} () const =0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classExprAST_a3e96753468106b6b3b93d6f4805ac77f}\label{classExprAST_a3e96753468106b6b3b93d6f4805ac77f} 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\end{DoxyCompactItemize}

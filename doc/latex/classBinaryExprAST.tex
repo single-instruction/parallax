@@ -1,0 +1,70 @@
+\doxysection{Binary\+Expr\+AST Class Reference}
+\hypertarget{classBinaryExprAST}{}\label{classBinaryExprAST}\index{BinaryExprAST@{BinaryExprAST}}
+Inheritance diagram for Binary\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classBinaryExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classBinaryExprAST_aee0ad3242ad83b39fbfd13eb2667863c}\label{classBinaryExprAST_aee0ad3242ad83b39fbfd13eb2667863c} 
+{\bfseries Binary\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, char op, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ lhs, std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ rhs)
+\item 
+void \mbox{\hyperlink{classBinaryExprAST_aa7dfa91136bd6614c2cda0c629faaad8}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classBinaryExprAST_a65f8a52cec7dc7338108582389c841c1}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classBinaryExprAST_a4e14adc18edf2f355532ed85d75f8967}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBinaryExprAST_a65f8a52cec7dc7338108582389c841c1}\index{BinaryExprAST@{BinaryExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!BinaryExprAST@{BinaryExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classBinaryExprAST_a65f8a52cec7dc7338108582389c841c1} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Binary\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classBinaryExprAST_aa7dfa91136bd6614c2cda0c629faaad8}\index{BinaryExprAST@{BinaryExprAST}!dump@{dump}}
+\index{dump@{dump}!BinaryExprAST@{BinaryExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classBinaryExprAST_aa7dfa91136bd6614c2cda0c629faaad8} 
+void Binary\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classBinaryExprAST_a4e14adc18edf2f355532ed85d75f8967}\index{BinaryExprAST@{BinaryExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!BinaryExprAST@{BinaryExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classBinaryExprAST_a4e14adc18edf2f355532ed85d75f8967} 
+std\+::string Binary\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

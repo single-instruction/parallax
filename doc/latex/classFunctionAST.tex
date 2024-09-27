@@ -1,0 +1,23 @@
+\doxysection{Function\+AST Class Reference}
+\hypertarget{classFunctionAST}{}\label{classFunctionAST}\index{FunctionAST@{FunctionAST}}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classFunctionAST_a89066408a2ecd0ce0c54f26c6bf09ef8}\label{classFunctionAST_a89066408a2ecd0ce0c54f26c6bf09ef8} 
+{\bfseries Function\+AST} (const std\+::string \&name, std\+::vector$<$ std\+::pair$<$ std\+::string, Type $>$ $>$ args, Type return\+Type, std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classExprAST}{Expr\+AST}} $>$ $>$ body)
+\item 
+\Hypertarget{classFunctionAST_a28939ef1b9050d34f88d607ffa96171e}\label{classFunctionAST_a28939ef1b9050d34f88d607ffa96171e} 
+void {\bfseries dump} (int indent=0) const
+\item 
+\Hypertarget{classFunctionAST_a2ceec8b33ac7fa3acbc08099f359dbbd}\label{classFunctionAST_a2ceec8b33ac7fa3acbc08099f359dbbd} 
+llvm\+::\+Function \texorpdfstring{$\ast$}{*} {\bfseries codegen} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context)
+\item 
+\Hypertarget{classFunctionAST_a0f895377b38393c0041e834b7f355292}\label{classFunctionAST_a0f895377b38393c0041e834b7f355292} 
+std\+::string {\bfseries type\+Check} () const
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

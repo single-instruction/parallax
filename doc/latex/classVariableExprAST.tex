@@ -1,0 +1,70 @@
+\doxysection{Variable\+Expr\+AST Class Reference}
+\hypertarget{classVariableExprAST}{}\label{classVariableExprAST}\index{VariableExprAST@{VariableExprAST}}
+Inheritance diagram for Variable\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classVariableExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classVariableExprAST_a58adaacefb928c179c945b520c0f0835}\label{classVariableExprAST_a58adaacefb928c179c945b520c0f0835} 
+{\bfseries Variable\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, const std\+::string \&name, Type type)
+\item 
+void \mbox{\hyperlink{classVariableExprAST_adcac8bfb053b7cbde57f41ffa65f790b}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classVariableExprAST_aac9e12ca889087ffbc098e7c68663b81}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classVariableExprAST_a681c13e3e0e37532adb2c9e79625befd}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classVariableExprAST_aac9e12ca889087ffbc098e7c68663b81}\index{VariableExprAST@{VariableExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!VariableExprAST@{VariableExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classVariableExprAST_aac9e12ca889087ffbc098e7c68663b81} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Variable\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classVariableExprAST_adcac8bfb053b7cbde57f41ffa65f790b}\index{VariableExprAST@{VariableExprAST}!dump@{dump}}
+\index{dump@{dump}!VariableExprAST@{VariableExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classVariableExprAST_adcac8bfb053b7cbde57f41ffa65f790b} 
+void Variable\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classVariableExprAST_a681c13e3e0e37532adb2c9e79625befd}\index{VariableExprAST@{VariableExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!VariableExprAST@{VariableExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classVariableExprAST_a681c13e3e0e37532adb2c9e79625befd} 
+std\+::string Variable\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}

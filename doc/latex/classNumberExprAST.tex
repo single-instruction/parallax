@@ -1,0 +1,70 @@
+\doxysection{Number\+Expr\+AST Class Reference}
+\hypertarget{classNumberExprAST}{}\label{classNumberExprAST}\index{NumberExprAST@{NumberExprAST}}
+Inheritance diagram for Number\+Expr\+AST\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{classNumberExprAST}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classNumberExprAST_a187b3308830a03ec0a32b5ea7b9f18e8}\label{classNumberExprAST_a187b3308830a03ec0a32b5ea7b9f18e8} 
+{\bfseries Number\+Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc, double val, Type type)
+\item 
+void \mbox{\hyperlink{classNumberExprAST_a87ab61e1d7ba0263bbf2b584475a51c8}{dump}} (int indent=0) const override
+\item 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classNumberExprAST_a3c6c70c4e7163aef57f299ba1d5337e2}{codegen}} (\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&context) override
+\item 
+std\+::string \mbox{\hyperlink{classNumberExprAST_acb2f78e681cb5207896e87eb299a783c}{type\+Check}} () const override
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+{\bfseries Expr\+AST} (\mbox{\hyperlink{structLocation}{Location}} loc)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Public Attributes inherited from \mbox{\hyperlink{classExprAST}{Expr\+AST}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{structLocation}{Location}} {\bfseries loc}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classNumberExprAST_a3c6c70c4e7163aef57f299ba1d5337e2}\index{NumberExprAST@{NumberExprAST}!codegen@{codegen}}
+\index{codegen@{codegen}!NumberExprAST@{NumberExprAST}}
+\doxysubsubsection{\texorpdfstring{codegen()}{codegen()}}
+{\footnotesize\ttfamily \label{classNumberExprAST_a3c6c70c4e7163aef57f299ba1d5337e2} 
+llvm\+::\+Value \texorpdfstring{$\ast$}{*} Number\+Expr\+AST\+::codegen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCodeGenContext}{Code\+Gen\+Context}} \&}]{context}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classNumberExprAST_a87ab61e1d7ba0263bbf2b584475a51c8}\index{NumberExprAST@{NumberExprAST}!dump@{dump}}
+\index{dump@{dump}!NumberExprAST@{NumberExprAST}}
+\doxysubsubsection{\texorpdfstring{dump()}{dump()}}
+{\footnotesize\ttfamily \label{classNumberExprAST_a87ab61e1d7ba0263bbf2b584475a51c8} 
+void Number\+Expr\+AST\+::dump (\begin{DoxyParamCaption}\item[{int}]{indent}{ = {\ttfamily 0}}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+\Hypertarget{classNumberExprAST_acb2f78e681cb5207896e87eb299a783c}\index{NumberExprAST@{NumberExprAST}!typeCheck@{typeCheck}}
+\index{typeCheck@{typeCheck}!NumberExprAST@{NumberExprAST}}
+\doxysubsubsection{\texorpdfstring{typeCheck()}{typeCheck()}}
+{\footnotesize\ttfamily \label{classNumberExprAST_acb2f78e681cb5207896e87eb299a783c} 
+std\+::string Number\+Expr\+AST\+::type\+Check (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classExprAST}{Expr\+AST}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/AST.\+h\item 
+src/compiler/AST.\+cpp\end{DoxyCompactItemize}
